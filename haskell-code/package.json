@@ -1,0 +1,25 @@
+{
+	"name": "haskell-code",
+	"description": "Haskell syntax for Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "Sebastian Faltoni",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "haskell",
+			"aliases": ["Haskell", "haskell"],
+			"extensions": [".hs"],
+			"configuration": "./haskell.configuration.json"
+		}],
+		"grammars": [{
+			"language": "haskell",
+			"scopeName": "source.haskell",
+			"path": "./syntaxes/haskell.tmLanguage"
+		}]
+	}
+}
